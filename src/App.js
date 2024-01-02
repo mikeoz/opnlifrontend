@@ -1,22 +1,18 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import TestPage from './TestPage'; // Import the TestPage component
+import { BrowserRouter as Router, Link } from 'react-router-dom'; // Import Router and Link
+import TestPage from './TestPage'; // Make sure you have this component created
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router> {/* Wrap the content in a Router */}
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> or Review This Start Point: 1-a.
           </p>
-          {/* Add a Link component that links to "/test-page" */}
-          <Link to="/test-page">
-            <button className="App-link">Test Page</button>
-          </Link>
           <a
             className="App-link"
             href="https://reactjs.org"
@@ -25,9 +21,11 @@ function App() {
           >
             Learn React
           </a>
+          {/* Add the new Link for TestPage */}
+          <Link to="/test-page" className="App-link">
+            Test Page
+          </Link>
         </header>
-        {/* Set up a Route for TestPage */}
-        <Route path="/test-page" component={TestPage} />
       </div>
     </Router>
   );
