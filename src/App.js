@@ -1,12 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'; // Import Router and Link
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import TestPage from './TestPage';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <Router> {/* Wrap the content in a Router */}
+    <Router>
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
@@ -24,6 +24,11 @@ function App() {
           <Link to="/test-page" className="App-link">Test Page</Link>
         </header>
         {/* Define the Route for TestPage */}
+        <Route exact path="/" render={() => (
+          <React.Fragment>
+            {/* Content or components you want to render at root */}
+          </React.Fragment>
+        )}/>
         <Route path="/test-page" component={TestPage} />
       </div>
     </Router>
