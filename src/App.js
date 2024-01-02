@@ -1,12 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'; // Import Route along with others
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'; // Import Router and Link
 import TestPage from './TestPage';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router> {/* Wrap the content in a Router */}
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
