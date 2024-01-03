@@ -21,24 +21,22 @@ function App() {
           >
             Learn React
           </a>
-          <Link to="/TestPage" className="App-link">Test Page</Link>
+          {/* Corrected the path to be lowercase and consistent */}
+          <Link to="/test-page" className="App-link">Test Page</Link>
         </header>
         <Routes>
-          <Route path="/" element={<MainContent />} />
-          <Route path="/TestPage" element={<TestPage />} />
+          {/* The main content is directly included */}
+          <Route path="/" element={
+            <div>
+              <h1>Welcome to the Main Page</h1>
+              <p>This is the content of the main page.</p>
+            </div>
+          } />
+          {/* Path corrected to be lowercase */}
+          <Route path="/test-page" element={<TestPage />} />
         </Routes>
       </div>
     </Router>
-  );
-}
-
-// Main content as a separate component
-function MainContent() {
-  return (
-    <div>
-      <h1>Welcome to the Main Page</h1>
-      <p>This is the content of the main page.</p>
-    </div>
   );
 }
 
