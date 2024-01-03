@@ -1,12 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import TestPage from './TestPage';
+import { BrowserRouter as Router, Link } from 'react-router-dom'; // Import Router and Link
+import TestPage from './TestPage'; // Make sure you have this component created
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router> {/* Wrap the content in a Router */}
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
@@ -21,15 +21,11 @@ function App() {
           >
             Learn React
           </a>
-          <Link to="/test-page" className="App-link">Test Page</Link>
+          {/* Add the new Link for TestPage */}
+          <Link to="/test-page" className="App-link">
+            Test Page
+          </Link>
         </header>
-        {/* Define the Route for TestPage */}
-        <Route exact path="/" render={() => (
-          <React.Fragment>
-            {/* Content or components you want to render at root */}
-          </React.Fragment>
-        )}/>
-        <Route path="/test-page" component={TestPage} />
       </div>
     </Router>
   );
