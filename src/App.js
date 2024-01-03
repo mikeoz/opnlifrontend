@@ -21,11 +21,11 @@ function App() {
           >
             Learn React
           </a>
-          <Link to="/test-page" className="App-link">Test Page</Link>
+          <Link to="/TestPage" className="App-link">Test Page</Link>
         </header>
         <Routes>
           <Route path="/" element={<MainContent />} />
-          <Route path="/test-page" element={<TestPage />} />
+          <Route path="/TestPage" element={<TestPage />} />
         </Routes>
       </div>
     </Router>
