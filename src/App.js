@@ -21,16 +21,26 @@ function App() {
           >
             Learn React
           </a>
-          {/* Update Link to TestPage */}
+          {/* Ensure Link is used correctly */}
           <Link to="/test-page" className="App-link">Test Page</Link>
         </header>
-        {/* Update Routes and Route components */}
+        {/* Define Routes */}
         <Routes>
-          <Route path="/" element={<div><h1>Welcome to the Main Page</h1><p>This is the content of the main page.</p></div>} />
+          <Route path="/" element={<MainContent />} />
           <Route path="/test-page" element={<TestPage />} />
         </Routes>
       </div>
     </Router>
+  );
+}
+
+// Main content as a separate component
+function MainContent() {
+  return (
+    <div>
+      <h1>Welcome to the Main Page</h1>
+      <p>This is the content of the main page.</p>
+    </div>
   );
 }
 
