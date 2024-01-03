@@ -1,6 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom'; // Import Switch along with other components
-import TestPage from './TestPage'; // Import the TestPage component
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import TestPage from './TestPage';
 import logo from './logo.svg';
 import './App.css';
 
@@ -21,10 +21,12 @@ function App() {
           >
             Learn React
           </a>
-          <Link to="/test-page" className="App-link">Test Page</Link> {/* Link to TestPage */}
+          {/* Update Link to TestPage */}
+          <Link to="/test-page" className="App-link">Test Page</Link>
         </header>
-        <Routes> {/* Only the first matching Route is rendered */}
-          <Route exact path="/" element={<div><h1>Welcome to the Main Page</h1><p>This is the content of the main page.</p></div>} />
+        {/* Update Routes and Route components */}
+        <Routes>
+          <Route path="/" element={<div><h1>Welcome to the Main Page</h1><p>This is the content of the main page.</p></div>} />
           <Route path="/test-page" element={<TestPage />} />
         </Routes>
       </div>
