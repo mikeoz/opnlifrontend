@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-import TestPage from './TestPage';
+import TestPage from './TestPage'; // Ensure this is the correct path
 import logo from './logo.svg';
 import './App.css';
 
@@ -21,10 +21,8 @@ function App() {
           >
             Learn React
           </a>
-          {/* Ensure Link is used correctly */}
           <Link to="/test-page" className="App-link">Test Page</Link>
         </header>
-        {/* Define Routes */}
         <Routes>
           <Route path="/" element={<MainContent />} />
           <Route path="/test-page" element={<TestPage />} />
