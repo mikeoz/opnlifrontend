@@ -18,8 +18,8 @@ const PersonForm = () => {
     };
 
     try {
-      // Using the constructed Invoke URL based on the provided ARN details
-      const response = await fetch('https://wl9vtg73ee.execute-api.us-west-2.amazonaws.com/Prod/Neo4jOperation', {
+      // Using the updated API endpoint
+      const response = await fetch('https://3m4uvvctq3.execute-api.us-west-2.amazonaws.com/Production/Neo4jOperation', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
