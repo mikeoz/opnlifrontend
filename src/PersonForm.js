@@ -12,7 +12,7 @@ const PersonForm = () => {
     };
 
     try {
-      const response = await fetch('https://5xokx2kf59.execute-api.us-west-2.amazonaws.com/Production/Neo4jOperation', {
+      const response = await fetch('https://5xokx2kf59.execute-api.us-west-2.amazonaws.com/Production', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
