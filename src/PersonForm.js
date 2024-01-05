@@ -19,7 +19,7 @@ const PersonForm = () => {
 
     try {
       // Using the updated API endpoint in Build #37
-      const response = await fetch('https://5xokx2kf59.execute-api.us-west-2.amazonaws.com/Production', {
+      const response = await fetch('https://5xokx2kf59.execute-api.us-west-2.amazonaws.com/Production/Neo4jOperation', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
