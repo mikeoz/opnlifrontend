@@ -3,7 +3,7 @@
   "paths": {
     "/CARD": {
       "name": "/CARD",
-      "lambdaFunction": "Neo4jAuraConnector",
+      "lambdaFunction": "opnliLambdaFunction",
       "permissions": {
         "setting": "open"
       }
